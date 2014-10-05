@@ -37,14 +37,14 @@ class Magentothem_Banner8_Block_Adminhtml_Banner8_Edit_Tab_Form extends Mage_Adm
 
 
        
-        //if (!Mage::app()->isSingleStoreMode()) {
+        if (!Mage::app()->isSingleStoreMode()) {
             $fieldset->addField('store_id', 'multiselect', array(
                 'name' => 'store_id[]',
                 'label' => $this->__('Store View'),
                 'required' => TRUE,
                 'values' => Mage::getSingleton('adminhtml/system_store')->getStoreValuesForForm(FALSE, TRUE),
             ));
-        //}
+        }
 		
       $fieldset->addField('status', 'select', array(
           'label'     => Mage::helper('banner8')->__('Status'),

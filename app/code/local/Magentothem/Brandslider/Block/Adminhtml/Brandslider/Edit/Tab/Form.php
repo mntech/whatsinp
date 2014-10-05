@@ -9,14 +9,14 @@ class Magentothem_Brandslider_Block_Adminhtml_Brandslider_Edit_Tab_Form extends 
       $fieldset = $form->addFieldset('brandslider_form', array('legend'=>Mage::helper('brandslider')->__('Item information')));
      
 	         
-        //if (!Mage::app()->isSingleStoreMode()) {
+        if (!Mage::app()->isSingleStoreMode()) {
             $fieldset->addField('store_ids', 'multiselect', array(
                 'name' => 'store_ids[]',
                 'label' => $this->__('Store View'),
                 'required' => TRUE,
                 'values' => Mage::getSingleton('adminhtml/system_store')->getStoreValuesForForm(FALSE, TRUE),
             ));
-        //}
+        }
 		
       $fieldset->addField('title', 'text', array(
           'label'     => Mage::helper('brandslider')->__('Title'),
