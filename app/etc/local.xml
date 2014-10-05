@@ -28,21 +28,21 @@
 <config>
     <global>
         <install>
-            <date><![CDATA[Sat, 04 Oct 2014 12:46:50 -0500]]></date>
+            <date><![CDATA[Sun, 05 Oct 2014 08:06:17 -0500]]></date>
         </install>
         <crypt>
-            <key><![CDATA[lmhebuqkl2sskrrzjmkkrumi4kn9rfsd]]></key>
+            <key><![CDATA[ow5ubo7jav5cfqwmtwn8unavbbpnalmi]]></key>
         </crypt>
         <disable_local_modules>false</disable_local_modules>
         <resources>
             <db>
-                <table_prefix><![CDATA[wip_]]></table_prefix>
+                <table_prefix><![CDATA[]]></table_prefix>
             </db>
             <default_setup>
                 <connection>
                     <host><![CDATA[localhost]]></host>
                     <username><![CDATA[whatsinp_potli]]></username>
-                    <password><![CDATA[55PS-[uY07]]></password>
+                    <password><![CDATA[W6-SF51[PE]]></password>
                     <dbname><![CDATA[whatsinp_potli]]></dbname>
                     <initStatements><![CDATA[SET NAMES utf8]]></initStatements>
                     <model><![CDATA[mysql4]]></model>
