@@ -1,0 +1,51 @@
+
+.box-select {
+	padding: 8px 10px 10px 0 !important;
+}
+
+.header .header-box {
+	margin-top: 5%;
+}
+
+.header .header-content{
+	margin-top: 1%;
+}
+
+
+.header-select:before{
+	height: 10px !important;
+}
+.header-input {
+	padding: 0px 0 !important;
+}
+
+.header .search-container button.button span{
+	height: 40px !important;
+}
+
+.top-link ul.links li a {
+	padding: 0px 8px !important;
+}
+
+.static-left{
+	display: none !important;
+}
+
+.nav-container{
+	display: none;
+}
+
+.col-left{
+	margin-top: 20px !important;
+}
+.breadcrumbs{
+	margin-top: 20px !important;
+}
+
+.footer-static-container{
+	display: none !important;
+}
+
+.header-container-inner{
+	padding: 0 0 10px 0 !important;
+}
