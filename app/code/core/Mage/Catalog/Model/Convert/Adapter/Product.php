@@ -765,7 +765,21 @@ class Mage_Catalog_Model_Convert_Adapter_Product
             if (isset($importData[$mediaAttributeCode])) {
                 $file = trim($importData[$mediaAttributeCode]);
                 if (!empty($file) && !$mediaGalleryBackendModel->getImage($product, $file)) {
-                    $arrayToMassAdd[] = array('file' => trim($file), 'mediaAttribute' => $mediaAttributeCode);
+                	//this is custom code - Start here
+                	preg_match('/^http/', $file, $matches);
+   			if (!empty($matches)) { 
+                	//if($file.startsWith('http')) {
+                		$image_type = substr(strrchr($image_url,"."),1); //find the image extension
+				$filename   = md5($file . $importData['sku']).'.'.$image_type; //give a new name, you can modify as per your requirement
+				$filepath   = Mage::getBaseDir('media') . DS . 'import'. DS . $filename; //path for temp storage folder: ./media/import/
+				file_put_contents($filepath, file_get_contents(trim($file))); //store the image from external url to the temp storage folder
+				$arrayToMassAdd[] = array('file' => trim($filepath), 'mediaAttribute' => $mediaAttributeCode);
+                	} else {
+                		// below is original OOB code
+                    		$arrayToMassAdd[] = array('file' => trim($file), 'mediaAttribute' => $mediaAttributeCode);
+                	}
+                	//this is custom code - End here
+                	
                 }
             }
         }
