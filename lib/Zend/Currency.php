@@ -236,7 +236,9 @@ class Zend_Currency
                     break;
             }
         }
-
+		//http://whatsinpotli.com/
+		$sign = '<img style="margin-top: 4px;width: 10px;" src="http://whatsinpotli.com/skin/frontend/base/default/images/indian-rupee-symbol.png">';
+        
         $value = str_replace('¤', $sign, $value);
         return $value;
     }

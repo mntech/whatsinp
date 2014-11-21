@@ -49,3 +49,13 @@
 .header-container-inner{
 	padding: 0 0 10px 0 !important;
 }
+
+#customDropDown{
+	margin: 30px 0 0 -20px !important;
+}
+
+.bootstrap-select .btn:focus {
+	outline: hidden dotted #333 !important;
+	outline: 0px auto -webkit-focus-ring-color !important;
+	outline-offset: 0px;
+}
