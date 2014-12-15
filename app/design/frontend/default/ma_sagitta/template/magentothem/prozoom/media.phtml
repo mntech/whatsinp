@@ -28,7 +28,7 @@
 </p>
 <?php if ( count($this->getGalleryImages()) > 0 ): ?>
 	<?php if( (!Mage::getStoreConfig('prozoom/prozoom_config/enabled_thumbnail')) || ( count($this->getGalleryImages()) < $_thumbnail_qty )|| ( count($this->getGalleryImages()) == $_thumbnail_qty )) { ?>
-		<div class="more-views ma-more-img">
+		<div class="more-views ma-more-img" style="display:none;">
 			<h2><?php echo $this->__('More Views') ?></h2>
 			<ul>
 			<?php foreach ($this->getGalleryImages() as $_image): ?>

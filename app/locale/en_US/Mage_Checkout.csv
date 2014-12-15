@@ -166,11 +166,11 @@ Add to Cart,Add to Potli
 "Multishipping Checkout Shipping Address Selection","Multishipping Checkout Shipping Address Selection"
 "Multishipping Checkout Shipping Information Step","Multishipping Checkout Shipping Information Step"
 "Multishipping Checkout Success","Multishipping Checkout Success"
-"My Cart","My Cart"
-"My Cart (%s item)","My Cart (%s item)"
-"My Cart (%s items)","My Cart (%s items)"
+My Cart,My Potli
+My Cart (%s item),My Potli (%s item)
+My Cart (%s items),My Potli (%s items)
 "My Cart Extra Actions","My Cart Extra Actions"
-"My Cart Link","My Cart Link"
+My Cart Link,My Potli Link
 "New Address","New Address"
 "New Condition","New Condition"
 "New Terms and Conditions","New Terms and Conditions"
@@ -273,7 +273,7 @@ Add to Cart,Add to Potli
 "Shipping method has not been selected yet","Shipping method has not been selected yet"
 "Shipping methods in shopping cart","Shipping methods in shopping cart"
 "Shipping selection is not applicable.","Shipping selection is not applicable."
-"Shopping Cart","Shopping Cart"
+Shopping Cart,My Potli
 "Shopping Cart Form Before","Shopping Cart Form Before"
 "Shopping Cart Sidebar","Shopping Cart Sidebar"
 "Shopping Cart Sidebar Extra Actions","Shopping Cart Sidebar Extra Actions"

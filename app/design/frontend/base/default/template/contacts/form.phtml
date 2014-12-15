@@ -48,9 +48,15 @@
             </li>
             <li>
                 <label for="telephone"><?php echo Mage::helper('contacts')->__('Telephone') ?></label>
-                <div class="input-box">
+                <div class="input-box" style="float: left;">
                     <input name="telephone" id="telephone" title="<?php echo Mage::helper('contacts')->__('Telephone') ?>" value="" class="input-text" type="text" />
                 </div>
+				
+				<div style="float: right;font-size: 25px;" class="col-md-6"> 
+					<span> OR </span> 
+					<span  class="col-md-offset-3"> Call us @ 9028022291  </span>
+				</div>
+				
             </li>
             <li class="wide">
                 <label for="comment" class="required"><em>*</em><?php echo Mage::helper('contacts')->__('Comment') ?></label>
@@ -63,7 +69,7 @@
     <div class="buttons-set">
         <p class="required"><?php echo Mage::helper('contacts')->__('* Required Fields') ?></p>
         <input type="text" name="hideit" id="hideit" value="" style="display:none !important;" />
-        <button type="submit" title="<?php echo Mage::helper('contacts')->__('Submit') ?>" class="button"><span><span><?php echo Mage::helper('contacts')->__('Submit') ?></span></span></button>
+        <button type="submit" title="<?php echo Mage::helper('contacts')->__('Submit') ?>" class="btn btn-success"><span><span><?php echo Mage::helper('contacts')->__('Submit') ?></span></span></button>
     </div>
 </form>
 <script type="text/javascript">
