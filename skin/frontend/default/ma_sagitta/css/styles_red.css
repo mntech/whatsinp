@@ -1352,7 +1352,8 @@ p.welcome-msg { margin: 0; line-height: 50px; text-align: center; display: inlin
 .drop-currency .sub-currency li:first-child a { border-radius: 5px 5px 0 0; }
 /*----------------------------------------------------------------*/
 .top-cart-wrapper {
-    background:url(../images/icon-cart.png) no-repeat 0 0;
+    background:url(../images/only_potli.png) no-repeat 0 0;
+    background-size: 30%;
     float: left;
     margin:0;
     text-align:center;
@@ -1362,7 +1363,8 @@ p.welcome-msg { margin: 0; line-height: 50px; text-align: center; display: inlin
     color: #ccc;
 }
 .top-cart-wrapper:hover {
-    background:url(../images/icon-cart.png) no-repeat 0 -150px;
+    background:url(../images/only_potli.png) no-repeat 0 0;
+    background-size: 30%;
 }
 .top-cart-contain {
     position: relative;

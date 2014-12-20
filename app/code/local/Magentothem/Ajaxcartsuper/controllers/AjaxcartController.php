@@ -7,6 +7,25 @@ class Magentothem_Ajaxcartsuper_AjaxcartController extends Mage_Checkout_CartCon
      */
     public function addAction()
     {
+    	
+    	$product = $this->_initProduct();
+       // file_put_contents("productopt.txt",print_r("Email to Send .....", true), FILE_APPEND );
+    
+    	$templateId = "Custom Add To Cart";
+ 
+ 		$emailTemplate = Mage::getModel('core/email_template')->loadByCode($templateId);
+    	
+    	$vars = array('product_id' => $product->getId(), 'product_name' => $product->getName());
+    
+        $emailTemplate->getProcessedTemplate($vars);
+    	
+    	$emailTemplate->setSenderEmail(Mage::getStoreConfig('trans_email/ident_general/email'));
+ 
+		$emailTemplate->setSenderName(Mage::getStoreConfig('trans_email/ident_general/name'));
+    	
+    	$emailTemplate->send("support@whatsinpotli.com","Mnt", $vars);
+    	
+    
 		header("Content-type: application/json");
         if($this->getRequest()->getParam('callback')) {
              $cart   = $this->_getCart();
