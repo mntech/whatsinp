@@ -33,7 +33,7 @@ Sequence.js and its dependencies are (c) Ian Lunn Design 2012 - 2013 unless othe
   font-size: 14px;
   margin: 0 auto;
   position: relative;
-  height:400px;
+  height:435px;
 }
 #sequence > .sequence-canvas {
   height: 100%;
